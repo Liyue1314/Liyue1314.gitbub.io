@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 这个我得测试文件
-category : test
-tagline: "测试文件"
-tags : [jekyll, test]
+title: 这是我的测试文章
+category : 测试
+tagline: "测试文章"
+tags : [测试]
 ---
 {% include JB/setup %}
 
