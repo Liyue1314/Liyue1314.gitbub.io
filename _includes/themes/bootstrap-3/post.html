@@ -6,7 +6,7 @@
   <div class="col-xs-12">
     <div class="post-info">
 	  <div class=" ">
-		<div class="tag_box inline">
+		<ul class="tag_box inline">
 			<li><i class="glyphicon glyphicon-calendar"></i></li>
 			<li>{{ page.date | date: " %Y 年 %m 月 %d 日" }}</li>
 			{% unless page.categories == empty %}
@@ -20,14 +20,11 @@
 				{% assign tags_list = page.tags %}
 				{% include JB/tags_list %}
 			{% endunless %}
-		</div>
-		<div>
+		</ul>
+		<ul>
 			{% include custom/baidu_share %}
-		</div>
+		</ul>
 	  </div>
-	  
-	  
-	  
     </div>
     <hr>
     <div class="content">
