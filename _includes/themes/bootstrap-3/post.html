@@ -5,21 +5,29 @@
 <div class="row post-full">
   <div class="col-xs-12">
     <div class="post-info">
-	  <ul class="tag_box inline">
-        <li><i class="glyphicon glyphicon-calendar"></i></li>
-	    <li>{{ page.date | date: " %Y 年 %m 月 %d 日" }}</li>
-		{% unless page.categories == empty %}
-			<li><i class="glyphicon glyphicon-open"></i></li>
-			{% assign categories_list = page.categories %}
-			{% include JB/categories_list %}
-		{% endunless %}  
-		
-		 {% unless page.tags == empty %}
-			<li><i class="glyphicon glyphicon-tags"></i></li>
-			{% assign tags_list = page.tags %}
-			{% include JB/tags_list %}
-		 {% endunless %}
-	  </ul>
+	  <div class=" ">
+		<div class="tag_box inline">
+			<li><i class="glyphicon glyphicon-calendar"></i></li>
+			<li>{{ page.date | date: " %Y 年 %m 月 %d 日" }}</li>
+			{% unless page.categories == empty %}
+				<li><i class="glyphicon glyphicon-open"></i></li>
+				{% assign categories_list = page.categories %}
+				{% include JB/categories_list %}
+			{% endunless %}  
+			
+			{% unless page.tags == empty %}
+				<li><i class="glyphicon glyphicon-tags"></i></li>
+				{% assign tags_list = page.tags %}
+				{% include JB/tags_list %}
+			{% endunless %}
+		</div>
+		<div class="pull-right">
+			{% include custom/baidu_share %}
+		</div>
+	  </div>
+	  
+	  
+	  
     </div>
     <hr>
     <div class="content">
