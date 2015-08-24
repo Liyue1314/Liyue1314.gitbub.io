@@ -8,13 +8,12 @@
 	  <div class=" ">
 		<ul class="tag_box inline">
 			<li><i class="glyphicon glyphicon-calendar"></i></li>
-			<li>{{ page.date | date: " %Y 年 %m 月 %d 日" }}</li>
+			<li style="margin-right:15px">{{ page.date | date: " %Y 年 %m 月 %d 日" }}</li>
 			{% unless page.categories == empty %}
 				<li><i class="glyphicon glyphicon-open"></i></li>
 				{% assign categories_list = page.categories %}
 				{% include JB/categories_list %}
 			{% endunless %}  
-			
 			{% unless page.tags == empty %}
 				<li><i class="glyphicon glyphicon-tags"></i></li>
 				{% assign tags_list = page.tags %}
