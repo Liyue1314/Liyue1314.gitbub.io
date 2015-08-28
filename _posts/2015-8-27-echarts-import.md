@@ -24,7 +24,7 @@ public class HelloWorld {
 }
 {% endhighlight %}
 
-````java
+```` java
 public class HelloWorld {
     public static void main(String args[]) {
       System.out.println("Hello World!");
