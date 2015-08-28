@@ -16,7 +16,7 @@ tags : [演示,echarts]
 
 详见[入门教程（ Getting started）>>](http://echarts.baidu.com/doc/start.html)
 
-{% highlight java%}
+{% highlight java linenos %}
 public class HelloWorld {
     public static void main(String args[]) {
       System.out.println("Hello World!");
